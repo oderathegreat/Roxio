@@ -13,13 +13,13 @@
         android:id="@+id/edtUsername"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="129dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
         android:ems="10"
         android:hint="username"
-        android:inputType="textPersonName"
 
+        android:inputType="textPersonName"
         android:textColor="#716464" />
 
     <EditText
@@ -27,8 +27,8 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/edtUsername"
-        android:layout_marginBottom="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
@@ -37,13 +37,13 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:textColor="#FFF"
-        android:background="#5a8cde"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/edtUsername"
-        android:layout_marginBottom="115dp"
-        android:text="LOGIN" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="#5a8cde"
+        android:text="LOGIN"
+        android:textColor="#FFF" />
 
     <TextView
         android:id="@+id/forgotTxt"
