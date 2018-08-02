@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "527214186247",
+    "firebase_url": "https://roxio-2fed1.firebaseio.com",
+    "project_id": "roxio-2fed1",
+    "storage_bucket": "roxio-2fed1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527214186247:android:54fdd2a1c7096f5e",
+        "android_client_info": {
+          "package_name": "com.example.user.roxio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527214186247-jbf88dl2boilp1r2636018d259en7kia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.roxio",
+            "certificate_hash": "ffed39c9380b5bf9d46c0745b0e3c80256e20179"
+          }
+        },
+        {
+          "client_id": "527214186247-ipovi3mqbso4a97cevmj9por2u6e8b2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABWESZ5IB8PXBm386kB9J5JzI33dZ6X2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527214186247-ipovi3mqbso4a97cevmj9por2u6e8b2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
