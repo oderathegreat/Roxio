@@ -1,4 +1,4 @@
-package com.example.user.roxio;
+package com.example.user.roxio.activities;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.user.roxio.activities.Dashboard;
-import com.example.user.roxio.activities.SignIn;
-import com.example.user.roxio.activities.SignUp;
+import com.example.user.roxio.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -23,10 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText inputUsername,inputPassword;
     Button login,signupacc;
     FirebaseAuth mAuth;
-
-
-
-
+    FirebaSE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
