@@ -50,8 +50,3 @@ public class Remote {
         this.title = title;
     }
 }
-
-
-
-
-

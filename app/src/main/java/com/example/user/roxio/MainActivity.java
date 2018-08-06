@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                         Toast.makeText(MainActivity.this, "Login success", Toast.LENGTH_SHORT).show();
 
-                        //navigate to another page
+                        //go to another page
 
                         Intent intent = new Intent(MainActivity.this, Dashboard.class);
                         startActivity(intent);
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         Toast.makeText(MainActivity.this, "Failed, Try Again", Toast.LENGTH_SHORT).show();
+
                     }
 
                     }
