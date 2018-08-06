@@ -53,4 +53,14 @@
         android:layout_alignStart="@+id/edtUsername"
         android:layout_marginBottom="64dp"
         android:text="Forgot Password ? Click Here" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/forgotTxt"
+        android:layout_alignStart="@+id/edtUsername"
+        android:background="#24d183"
+        android:text="SIGN UP"
+        android:textColor="#FFF" />
 </RelativeLayout>

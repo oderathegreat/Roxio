@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.user.roxio.activities.Dashboard;
 import com.example.user.roxio.activities.SignIn;
+import com.example.user.roxio.activities.SignUp;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -20,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     EditText inputUsername,inputPassword;
-    Button login;
+    Button login,signupacc;
     FirebaseAuth mAuth;
 
 
@@ -35,6 +36,19 @@ public class MainActivity extends AppCompatActivity {
         inputUsername = findViewById(R.id.edtUsername);
         inputPassword = findViewById(R.id.edtPass);
         login = findViewById(R.id.btnLogin);
+
+
+        signupacc = findViewById(R.id.btnSignUp);
+
+        signupacc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //signup page
+
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
+            }
+        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

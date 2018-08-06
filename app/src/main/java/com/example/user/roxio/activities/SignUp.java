@@ -15,11 +15,13 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserInfo;
 
 public class SignUp extends AppCompatActivity {
 
     EditText name,mail,phone,pass;
     Button signUp;
+    UserInfo userInfo;
 
     //initiating firebase instance
 
@@ -42,6 +44,9 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //sign up logic goes here
+
+
+
                 String email = mail.getText().toString().trim();
                 String password = pass.getText().toString().trim();
 
