@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //login login goes here
-               dialog.dismiss();
+               dialog.show();
                 String username = inputUsername.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
                 mAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
