@@ -1,5 +1,6 @@
 package com.example.user.roxio.activities;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button login,signupacc;
     FirebaseAuth mAuth;
     FirebaseDatabase database;
+    ProgressDialog dialog;
 
 
     @Override
@@ -34,14 +36,19 @@ public class MainActivity extends AppCompatActivity {
         inputUsername = findViewById(R.id.edtUsername);
         inputPassword = findViewById(R.id.edtPass);
         login = findViewById(R.id.btnLogin);
+        dialog = new ProgressDialog(this);
+        dialog.setMessage("Wait a minute this shouldn't take long....");
 
 
         signupacc = findViewById(R.id.btnSignUp);
 
         signupacc.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
                 //signup page
+
 
                 Intent intent = new Intent(MainActivity.this, SignUp.class);
                 startActivity(intent);
@@ -52,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //login login goes here
-
+               dialog.dismiss();
                 String username = inputUsername.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
                 mAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -63,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
 
                         Toast.makeText(MainActivity.this, "Login success", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
 
                         //go to another page
 
@@ -71,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
                     } else {
 
-
+                          dialog.dismiss();
                         Toast.makeText(MainActivity.this, "Failed, Try Again", Toast.LENGTH_SHORT).show();
 
                     }
@@ -82,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
 
                         //if task is not
-
+                       dialog.dismiss();
 
                         Toast.makeText(MainActivity.this, "Failed to login, Try again", Toast.LENGTH_SHORT).show();
 
