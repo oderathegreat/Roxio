@@ -61,6 +61,25 @@
         android:inputType="phone"
         android:hint="Phone Number"/>
 
+
+
+
+
+    <EditText
+        android:id="@+id/inputSymptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#2F2F30"
+        android:textColorHint="#626568"
+        android:inputType="textPersonName"
+        android:hint="La"/>
+
+
+
+
+
+
     <Button
         android:id="@+id/btnNext"
         android:background="#000"
